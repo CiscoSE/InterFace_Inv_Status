@@ -10,7 +10,7 @@ This a tool to help new user to the Cisco DNA Center to better understand the us
 
 ## How to run:
 
-'''
+```
 python3 dnac_interfaces.py  
 $ python3 ./dnac_interfaces.py  
 Hostname  : Port Name                     : Admin State : Interface State : Interface Description  
@@ -26,6 +26,8 @@ cat_9k_1  : TenGigabitEthernet1/0/1       : UP          : up              :  lin
 cat_9k_1  : TenGigabitEthernet1/0/2       : UP          : down            :  -->added-by-template-edjacks-template<--  
 cat_9k_1  : TenGigabitEthernet1/0/3       : UP          : down            :  -->edjacks-template-02<--  
 cat_9k_1  : TenGigabitEthernet1/0/4       : UP          : down            :  
-'''
+...  
+
+```
 
 Co-Created by Ed Jackson & Bryan Byers
