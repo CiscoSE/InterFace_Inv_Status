@@ -34,6 +34,9 @@ def print_interface_status(host, username, password):
         #
         # get interfaces
         interfaces = get_interface_status(host, token, id)
+
+
+        print('{: <10}: {: <30}: {: <11} : {: <15} : {: <20}'.format('Hostname', 'Port Name', 'Admin State', 'Interface State', 'Interface Description'))
         #
         for interface in interfaces:
             description = interface['description']
@@ -41,7 +44,7 @@ def print_interface_status(host, username, password):
             adminStatus = interface['adminStatus']
             portName = interface['portName']
             #
-            print(f'{hostname}: {portName}: {adminStatus}/{status} : {description}')
+            print(f'{hostname: <10}: {portName: <30}: {adminStatus: <11} : {status: <15} : {description: <20}')
             #
         print()
 
